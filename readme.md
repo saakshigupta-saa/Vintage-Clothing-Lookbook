@@ -39,7 +39,10 @@ Vintage-Clothing-Lookbook/
 ├── script.js
 ├── README.md
 
-```
+## screenshot
+<img width="1912" height="1000" alt="Screenshot 2026-07-05 194536" src="https://github.com/user-attachments/assets/9ae51b63-8337-4b53-bfa6-c888202d8184" />
+<img width="1896" height="986" alt="Screenshot 2026-07-05 194505" src="https://github.com/user-attachments/assets/5ffea423-7837-437b-b0b4-5b6d1841c97f" />
+
 
 ---
 

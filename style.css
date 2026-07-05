@@ -1,0 +1,1187 @@
+/* ==========================
+   GOOGLE FONT & RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#171717;
+    line-height:1.6;
+}
+
+/* ==========================
+   VARIABLES
+========================== */
+
+:root{
+
+    --white:#ffffff;
+    --light:#f5f5f5;
+    --gray:#d4d4d4;
+    --darkgray:#737373;
+    --dark:#262626;
+    --black:#000000;
+
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+
+    --radius:12px;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    width:100%;
+    background:var(--white);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    box-shadow:var(--shadow);
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.logo i{
+
+    font-size:28px;
+    color:var(--black);
+
+}
+
+.logo h2{
+
+    font-size:26px;
+    font-weight:600;
+
+}
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:var(--dark);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--black);
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    width:100%;
+    min-height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 8%;
+
+    background:linear-gradient(to right,#ffffff,#ececec);
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    color:var(--darkgray);
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.hero button{
+
+    padding:15px 35px;
+
+    background:var(--black);
+
+    color:var(--white);
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    background:var(--dark);
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search-section{
+
+    width:100%;
+
+    padding:70px 8%;
+
+}
+
+.search-section h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.search-box input{
+
+    width:420px;
+
+    padding:15px;
+
+    border:1px solid var(--gray);
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.search-box input:focus{
+
+    border-color:var(--black);
+
+}
+
+.search-box button{
+
+    padding:15px 30px;
+
+    background:var(--black);
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#404040;
+
+}
+
+/* ==========================
+   FILTERS
+========================== */
+
+.filters{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    padding:10px 8% 70px;
+
+}
+
+.filters select{
+
+    padding:14px;
+
+    width:180px;
+
+    border:1px solid var(--gray);
+
+    border-radius:8px;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+.filters button{
+
+    padding:14px 30px;
+
+    background:var(--black);
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.filters button:hover{
+
+    background:#404040;
+
+}
+/* ==========================
+   LOOKBOOK SECTION
+========================== */
+
+.lookbook{
+
+    width:100%;
+
+    padding:80px 8%;
+
+    background:var(--white);
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+
+    color:var(--black);
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:var(--darkgray);
+
+    font-size:17px;
+
+}
+
+/* ==========================
+   CARD GRID
+========================== */
+
+.lookbook-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    background:var(--white);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* ==========================
+   CARD IMAGE
+========================== */
+
+.card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+/* ==========================
+   CARD CONTENT
+========================== */
+
+.card-content{
+
+    padding:22px;
+
+}
+
+.card-content h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+    color:var(--black);
+
+}
+
+.card-content p{
+
+    margin-bottom:8px;
+
+    color:var(--dark);
+
+    font-size:15px;
+
+}
+
+.category{
+
+    display:inline-block;
+
+    background:#eeeeee;
+
+    color:#262626;
+
+    padding:6px 12px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+
+}
+
+/* ==========================
+   PRICE
+========================== */
+
+.price{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:var(--black);
+
+    margin:15px 0;
+
+}
+
+/* ==========================
+   AVAILABILITY BADGES
+========================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.available{
+
+    background:#e5e5e5;
+
+    color:#171717;
+
+}
+
+.sold{
+
+    background:#262626;
+
+    color:#ffffff;
+
+}
+
+/* ==========================
+   CARD BUTTON (Optional)
+========================== */
+
+.card button{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:12px;
+
+    border:none;
+
+    background:var(--black);
+
+    color:var(--white);
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#404040;
+
+}
+/* ==========================
+   LOADING STATE
+========================== */
+
+.loading-state{
+
+    display:none;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:var(--white);
+
+}
+
+.loading-state h3{
+
+    margin-top:25px;
+
+    font-size:28px;
+
+    color:var(--black);
+
+}
+
+.loading-state p{
+
+    margin-top:10px;
+
+    color:var(--darkgray);
+
+}
+
+/* ==========================
+   SPINNER
+========================== */
+
+.loader{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    border:8px solid var(--gray);
+
+    border-top:8px solid var(--black);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================
+   EMPTY STATE
+========================== */
+
+.empty-state{
+
+    display:none;
+
+    text-align:center;
+
+    padding:90px 20px;
+
+    background:var(--white);
+
+}
+
+.empty-state i{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+
+    color:var(--darkgray);
+
+}
+
+.empty-state h2{
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.empty-state p{
+
+    max-width:500px;
+
+    margin:auto;
+
+    color:var(--darkgray);
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   ADD ITEM SECTION
+========================== */
+
+.add-item{
+
+    width:100%;
+
+    padding:80px 8%;
+
+    background:var(--light);
+
+}
+
+/* ==========================
+   FORM
+========================== */
+
+#itemForm{
+
+    background:var(--white);
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================
+   FORM GRID
+========================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+/* ==========================
+   FORM GROUP
+========================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    padding:14px;
+
+    border:1px solid var(--gray);
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+    background:var(--white);
+
+    transition:.3s;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:140px;
+
+}
+
+/* ==========================
+   INPUT FOCUS
+========================== */
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    border-color:var(--black);
+
+}
+
+/* ==========================
+   ERROR STYLE
+========================== */
+
+.error{
+
+    border:2px solid red !important;
+
+}
+
+/* ==========================
+   SUBMIT BUTTON
+========================== */
+
+#addItemBtn{
+
+    margin-top:20px;
+
+    width:100%;
+
+    padding:16px;
+
+    background:var(--black);
+
+    color:var(--white);
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#addItemBtn:hover{
+
+    background:#404040;
+
+}
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:var(--black);
+
+    color:var(--white);
+
+    padding:60px 8% 20px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:40px;
+
+    margin-bottom:40px;
+
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4{
+
+    margin-bottom:18px;
+
+    font-size:22px;
+
+}
+
+.footer-about p,
+.footer-contact p{
+
+    color:#d4d4d4;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.footer-links ul{
+
+    list-style:none;
+
+}
+
+.footer-links ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#d4d4d4;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:var(--white);
+
+    padding-left:5px;
+
+}
+
+.footer-contact i{
+
+    margin-right:10px;
+
+}
+
+/* ==========================
+   SOCIAL ICONS
+========================== */
+
+.social-icons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+.social-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#262626;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    background:#404040;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+footer hr{
+
+    border:none;
+
+    border-top:1px solid #404040;
+
+    margin:20px 0;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+}
+
+.copyright p{
+
+    color:#d4d4d4;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+   BACK TO TOP
+========================== */
+
+#topBtn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--black);
+
+    color:var(--white);
+
+    cursor:pointer;
+
+    display:none;
+
+    font-size:18px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+#topBtn:hover{
+
+    background:#404040;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================
+   RESPONSIVE TABLET
+========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+}
+
+/* ==========================
+   RESPONSIVE MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+    padding:60px 20px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+}
+
+.search-section,
+.lookbook,
+.add-item{
+
+    padding:60px 20px;
+
+}
+
+.filters{
+
+    padding:20px;
+
+}
+
+.filters select,
+.filters button{
+
+    width:100%;
+
+}
+
+#itemForm{
+
+    padding:25px;
+
+}
+
+.footer-container{
+
+    text-align:center;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
+
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media(max-width:480px){
+
+.logo h2{
+
+    font-size:22px;
+
+}
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.hero button{
+
+    width:100%;
+
+}
+
+.search-box button{
+
+    width:100%;
+
+}
+
+.card img{
+
+    height:250px;
+
+}
+
+.card-content h3{
+
+    font-size:20px;
+
+}
+
+.price{
+
+    font-size:22px;
+
+}
+
+}
+
+/* ==========================
+   UTILITIES
+========================== */
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.show{
+
+    display:block !important;
+
+}

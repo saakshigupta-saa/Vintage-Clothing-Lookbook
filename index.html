@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Clothing Boutique Lookbook</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shirt"></i>
+
+        <h2>Vintage Boutique</h2>
+
+    </div>
+
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#">Collection</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Vintage Clothing Boutique Lookbook</h1>
+
+        <p>
+
+            Explore timeless fashion pieces from different decades.
+            Browse, search and manage your boutique collection easily.
+
+        </p>
+
+        <button id="browseBtn">
+
+            Browse Collection
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <h2>Find Vintage Clothing</h2>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search clothing..."
+        aria-label="Search Clothing">
+
+        <button
+        id="searchBtn"
+        aria-label="Search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Search
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= FILTERS ================= -->
+
+<section class="filters">
+
+    <select
+    id="categoryFilter"
+    aria-label="Category">
+
+        <option value="">All Categories</option>
+
+        <option>Dress</option>
+
+        <option>Jacket</option>
+
+        <option>Shirt</option>
+
+        <option>Jeans</option>
+
+        <option>Skirt</option>
+
+    </select>
+
+    <select
+    id="eraFilter"
+    aria-label="Era">
+
+        <option value="">All Eras</option>
+
+        <option>1960s</option>
+
+        <option>1970s</option>
+
+        <option>1980s</option>
+
+        <option>1990s</option>
+
+    </select>
+
+    <select
+    id="sizeFilter"
+    aria-label="Size">
+
+        <option value="">All Sizes</option>
+
+        <option>S</option>
+
+        <option>M</option>
+
+        <option>L</option>
+
+        <option>XL</option>
+
+    </select>
+
+    <button
+    id="resetBtn"
+    aria-label="Reset Filters">
+
+        Reset
+
+    </button>
+
+</section>
+<!-- ================= LOOKBOOK ================= -->
+
+<section class="lookbook">
+
+    <div class="section-title">
+
+        <h2>Vintage Collection</h2>
+
+        <p>Browse our curated vintage clothing collection.</p>
+
+    </div>
+
+    <div id="lookbookGrid" class="lookbook-grid">
+
+        <!-- CARD 1 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600"
+                 alt="Vintage Denim Jacket">
+
+            <div class="card-content">
+
+                <h3>Classic Denim Jacket</h3>
+
+                <p class="category">Jacket</p>
+
+                <p><strong>Era:</strong> 1980s</p>
+
+                <p><strong>Size:</strong> M</p>
+
+                <p class="price">$75</p>
+
+                <span class="badge available">Available</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 2 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600"
+                 alt="Vintage Floral Dress">
+
+            <div class="card-content">
+
+                <h3>Floral Summer Dress</h3>
+
+                <p class="category">Dress</p>
+
+                <p><strong>Era:</strong> 1970s</p>
+
+                <p><strong>Size:</strong> S</p>
+
+                <p class="price">$90</p>
+
+                <span class="badge sold">Sold</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 3 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600"
+                 alt="Vintage Leather Jacket">
+
+            <div class="card-content">
+
+                <h3>Leather Biker Jacket</h3>
+
+                <p class="category">Jacket</p>
+
+                <p><strong>Era:</strong> 1990s</p>
+
+                <p><strong>Size:</strong> L</p>
+
+                <p class="price">$150</p>
+
+                <span class="badge available">Available</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 4 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600"
+                 alt="Vintage Shirt">
+
+            <div class="card-content">
+
+                <h3>Retro Cotton Shirt</h3>
+
+                <p class="category">Shirt</p>
+
+                <p><strong>Era:</strong> 1960s</p>
+
+                <p><strong>Size:</strong> XL</p>
+
+                <p class="price">$55</p>
+
+                <span class="badge available">Available</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 5 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600"
+                 alt="Vintage Jeans">
+
+            <div class="card-content">
+
+                <h3>Vintage Blue Jeans</h3>
+
+                <p class="category">Jeans</p>
+
+                <p><strong>Era:</strong> 1980s</p>
+
+                <p><strong>Size:</strong> M</p>
+
+                <p class="price">$68</p>
+
+                <span class="badge available">Available</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 6 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600"
+                 alt="Vintage Skirt">
+
+            <div class="card-content">
+
+                <h3>Pleated Midi Skirt</h3>
+
+                <p class="category">Skirt</p>
+
+                <p><strong>Era:</strong> 1970s</p>
+
+                <p><strong>Size:</strong> S</p>
+
+                <p class="price">$48</p>
+
+                <span class="badge sold">Sold</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 7 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600"
+                 alt="Vintage Coat">
+
+            <div class="card-content">
+
+                <h3>Classic Wool Coat</h3>
+
+                <p class="category">Coat</p>
+
+                <p><strong>Era:</strong> 1960s</p>
+
+                <p><strong>Size:</strong> L</p>
+
+                <p class="price">$130</p>
+
+                <span class="badge available">Available</span>
+
+            </div>
+
+        </article>
+
+        <!-- CARD 8 -->
+
+        <article class="card">
+
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?w=600"
+                 alt="Vintage Sweater">
+
+            <div class="card-content">
+
+                <h3>Knitted Vintage Sweater</h3>
+
+                <p class="category">Sweater</p>
+
+                <p><strong>Era:</strong> 1990s</p>
+
+                <p><strong>Size:</strong> XL</p>
+
+                <p class="price">$72</p>
+
+                <span class="badge available">Available</span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- ================= LOADING STATE ================= -->
+
+<section id="loadingState" class="loading-state">
+
+    <div class="loader"></div>
+
+    <h3>Loading Collection...</h3>
+
+    <p>Please wait while we fetch the latest vintage collection.</p>
+
+</section>
+
+
+<!-- ================= EMPTY STATE ================= -->
+
+<section id="emptyState" class="empty-state">
+
+    <i class="fa-solid fa-box-open"></i>
+
+    <h2>No Data Found</h2>
+
+    <p>
+
+        We couldn't find any matching vintage clothing items.
+
+        Try changing your search or filters.
+
+    </p>
+
+</section>
+
+
+<!-- ================= ADD ITEM FORM ================= -->
+
+<section class="add-item">
+
+    <div class="section-title">
+
+        <h2>Add New Vintage Item</h2>
+
+        <p>Add a new clothing item to the boutique collection.</p>
+
+    </div>
+
+    <form id="itemForm">
+
+        <div class="form-grid">
+
+            <!-- Item Name -->
+
+            <div class="form-group">
+
+                <label for="itemName">
+
+                    Item Name
+
+                </label>
+
+                <input
+                type="text"
+                id="itemName"
+                placeholder="Enter item name"
+                aria-label="Item Name"
+                required>
+
+            </div>
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label for="itemCategory">
+
+                    Category
+
+                </label>
+
+                <select
+                id="itemCategory"
+                aria-label="Category"
+                required>
+
+                    <option value="">Select Category</option>
+
+                    <option>Dress</option>
+
+                    <option>Jacket</option>
+
+                    <option>Shirt</option>
+
+                    <option>Jeans</option>
+
+                    <option>Skirt</option>
+
+                    <option>Coat</option>
+
+                    <option>Sweater</option>
+
+                </select>
+
+            </div>
+
+            <!-- Era -->
+
+            <div class="form-group">
+
+                <label for="itemEra">
+
+                    Era
+
+                </label>
+
+                <select
+                id="itemEra"
+                aria-label="Era"
+                required>
+
+                    <option value="">Select Era</option>
+
+                    <option>1960s</option>
+
+                    <option>1970s</option>
+
+                    <option>1980s</option>
+
+                    <option>1990s</option>
+
+                </select>
+
+            </div>
+
+            <!-- Size -->
+
+            <div class="form-group">
+
+                <label for="itemSize">
+
+                    Size
+
+                </label>
+
+                <select
+                id="itemSize"
+                aria-label="Size"
+                required>
+
+                    <option value="">Select Size</option>
+
+                    <option>S</option>
+
+                    <option>M</option>
+
+                    <option>L</option>
+
+                    <option>XL</option>
+
+                </select>
+
+            </div>
+
+            <!-- Price -->
+
+            <div class="form-group">
+
+                <label for="itemPrice">
+
+                    Price
+
+                </label>
+
+                <input
+                type="number"
+                id="itemPrice"
+                placeholder="$"
+                aria-label="Price"
+                required>
+
+            </div>
+
+            <!-- Image URL -->
+
+            <div class="form-group">
+
+                <label for="imageUrl">
+
+                    Image URL
+
+                </label>
+
+                <input
+                type="url"
+                id="imageUrl"
+                placeholder="https://example.com/image.jpg"
+                aria-label="Image URL"
+                required>
+
+            </div>
+
+        </div>
+
+        <!-- Description -->
+
+        <div class="form-group">
+
+            <label for="description">
+
+                Description
+
+            </label>
+
+            <textarea
+            id="description"
+            rows="5"
+            placeholder="Write a short description..."
+            aria-label="Description"
+            required></textarea>
+
+        </div>
+
+        <button
+        type="submit"
+        id="addItemBtn"
+        aria-label="Add Item">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Vintage Item
+
+        </button>
+
+    </form>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h3>Vintage Boutique Lookbook</h3>
+
+            <p>
+
+                A clean and responsive boutique management interface
+                built using semantic HTML5, vanilla CSS and JavaScript.
+
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Collection</a></li>
+
+                <li><a href="#">Categories</a></li>
+
+                <li><a href="#">Add Item</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Contact</h4>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Boutique Street, New Delhi
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                vintageboutique@email.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 9876543210
+            </p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h4>Follow Us</h4>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 Vintage Boutique Lookbook |
+            Designed with HTML5, CSS3 & JavaScript
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+id="topBtn"
+title="Back to Top"
+aria-label="Back to Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ================= SCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

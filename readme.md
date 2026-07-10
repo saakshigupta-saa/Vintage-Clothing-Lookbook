@@ -40,6 +40,7 @@ Vintage-Clothing-Lookbook/
 ├── style.css
 ├── script.js
 ├── README.md
+```
 
 
 ## 🚀 Getting Started
